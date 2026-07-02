@@ -1,0 +1,84 @@
+.about-grid{
+  margin-top: 30px;
+  display:grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(30px, 6vw, 90px);
+}
+.about-heading{
+  font-size: clamp(28px, 4vw, 46px);
+  max-width: 14ch;
+  margin-bottom: 22px;
+}
+.about-paragraph{
+  color: var(--ink-dim);
+  font-size: 14.5px;
+  line-height: 1.75;
+  max-width: 56ch;
+  margin-bottom: 16px;
+}
+.about-stats{
+  display:flex;
+  gap: clamp(24px, 5vw, 60px);
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-soft);
+}
+.about-stat{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.about-stat-value{
+  font-size: clamp(26px, 3vw, 38px);
+  color: var(--red);
+}
+.about-stat-label{
+  font-size: 11px;
+  letter-spacing: .04em;
+  max-width: 12ch;
+}
+
+.about-skills{
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(24px, 3vw, 34px);
+  background: rgba(255,255,255,.02);
+  height: fit-content;
+}
+.about-skills-title{
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  display:block;
+  margin-bottom: 22px;
+}
+.skill-row{
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.skill-row:last-child{ border-bottom: none; padding-bottom:0; }
+.skill-row:first-of-type{ padding-top:0; }
+.skill-row-labels{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap: 10px;
+  font-size: 13.5px;
+  margin-bottom: 9px;
+}
+.skill-row-labels .dim{ font-size: 11px; white-space:nowrap; }
+.skill-dots{
+  display:flex;
+  gap:6px;
+}
+.skill-dot{
+  height:5px;
+  flex:1;
+  border-radius: 3px;
+  background: var(--line-soft);
+}
+.skill-dot.on{ background: var(--red); }
+
+@media (max-width: 900px){
+  .about-grid{ grid-template-columns: 1fr; }
+}

@@ -1,0 +1,332 @@
+.case-study-page {
+  background: var(--bg-0);
+  color: var(--ink);
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+/* Hero Section */
+.cs-hero {
+  position: relative;
+  padding: 140px 0 80px;
+  border-bottom: 1px solid var(--line-soft);
+  background: radial-gradient(120% 120% at 50% 0%, var(--bg-2) 0%, var(--bg-1) 50%, var(--bg-0) 100%);
+}
+
+.cs-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cs-back-btn {
+  align-self: flex-start;
+}
+
+.cs-header-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: flex-end;
+}
+
+.cs-title {
+  font-size: clamp(36px, 5vw, 64px);
+  margin: 16px 0 8px;
+}
+
+.cs-subtitle {
+  font-size: clamp(16px, 2vw, 20px);
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+
+.cs-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.cs-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-meta-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cs-meta-val {
+  font-size: 14.5px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.cs-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.cs-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  background: rgba(243, 236, 225, 0.05);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+}
+
+/* Tabs System */
+.cs-tabs-section {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(14, 12, 11, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.cs-tabs-wrapper {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.cs-tabs-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-tabs-list {
+  display: flex;
+  gap: 32px;
+  padding: 20px 0;
+}
+
+.cs-tab-btn {
+  background: none;
+  border: none;
+  color: var(--ink-dim);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.cs-tab-btn:hover,
+.cs-tab-btn.active {
+  color: var(--ink);
+}
+
+.cs-active-tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--red);
+}
+
+/* Content Layout */
+.cs-content-section {
+  padding-top: 60px;
+  min-height: 500px;
+}
+
+.cs-section-title {
+  font-family: var(--f-display);
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.cs-section-title.centered {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cs-text-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.cs-col-full {
+  grid-column: 1 / -1;
+  max-width: 80ch;
+}
+
+.cs-paragraph {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-dim);
+}
+
+/* High Fidelity Visual Showcase Frame */
+.cs-showcase-image-wrapper {
+  margin: 50px 0 70px;
+}
+
+.cs-image-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.cs-showcase-frame {
+  background: var(--bg-1);
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  padding: clamp(12px, 3vw, 40px);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5), 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.cs-showcase-image {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Key Deliverables */
+.cs-deliverables-box {
+  background: var(--bg-1);
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.cs-deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.cs-deliverable-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 1px solid var(--line);
+  padding-left: 20px;
+}
+
+.cs-deliverable-index {
+  font-family: var(--f-display);
+  font-size: 24px;
+  color: var(--red);
+}
+
+.cs-deliverable-text {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Stats Showcase */
+.cs-stats-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+.cs-stat-card {
+  background: var(--bg-1);
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.cs-stat-val {
+  font-size: clamp(36px, 5vw, 64px);
+  color: var(--red);
+}
+
+.cs-stat-lbl {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cs-takeaway-block {
+  max-width: 80ch;
+  margin: 40px auto 0;
+  background: rgba(226,38,28,0.03);
+  border: 1px solid rgba(226,38,28,0.15);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+/* Footer CTA */
+.cs-footer-cta {
+  margin-top: 100px;
+}
+
+.cs-cta-box {
+  background: radial-gradient(100% 100% at 100% 0%, var(--bg-2) 0%, var(--bg-1) 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.cs-cta-heading {
+  font-size: clamp(28px, 4vw, 44px);
+  max-width: 20ch;
+}
+
+/* Responsive Rules */
+@media (max-width: 991px) {
+  .cs-header-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .cs-deliverables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .cs-hero {
+    padding: 100px 0 50px;
+  }
+  .cs-text-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .cs-stats-showcase {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .cs-deliverables-grid {
+    grid-template-columns: 1fr;
+  }
+  .cs-cta-box {
+    padding: 40px 20px;
+  }
+}

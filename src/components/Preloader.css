@@ -1,0 +1,24 @@
+.preloader{
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: var(--bg-0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.preloader-mark{
+  font-family: var(--f-display);
+  font-size: clamp(28px, 6vw, 44px);
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+.preloader-bar{
+  position:absolute;
+  left:0; bottom:0;
+  height:3px;
+  width:100%;
+  background: var(--red);
+  transform-origin: left;
+}
