@@ -689,3 +689,46 @@
     height: 40px;
   }
 }
+
+/* Collage Masonry Layout for Social Media Gallery */
+.cs-collage-grid {
+  columns: 3;
+  column-gap: 8px;
+  margin-top: 24px;
+}
+
+.cs-collage-item {
+  break-inside: avoid;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--bg-1);
+  border: 1px solid var(--line-soft);
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.cs-collage-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.cs-collage-item:hover .cs-collage-img {
+  transform: scale(1.03);
+}
+
+@media (max-width: 991px) {
+  .cs-collage-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .cs-collage-grid {
+    columns: 1;
+  }
+}
+

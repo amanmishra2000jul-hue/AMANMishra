@@ -23,7 +23,8 @@ export default function CaseStudy({ project, onBack }) {
 
   const cs = project.caseStudy;
   const category = project.category || "Web applications";
-  const isCreativeCategory = ["Branding", "Social media Management", "Marketing campaigns"].includes(category);
+  const isCreativeCategory = ["Branding", "Social media Management", "Marketing campaigns", "Social Media Posts", "Branding & Marketing"].includes(category);
+  const isSocialMediaCategory = category === "Social Media Posts";
 
   // Dynamic Tabs list based on project category
   const tabs = [
@@ -213,17 +214,17 @@ export default function CaseStudy({ project, onBack }) {
                   A collection of high-fidelity interface screenshots, style guides, and design boards. Click on any mockup to view a high-resolution version.
                 </p>
 
-                <div className="cs-gallery-grid">
-                  {screenshots.map((shot, idx) => (
-                    <motion.div
-                      key={idx}
-                      className="cs-gallery-card"
-                      whileHover={{ y: -6 }}
-                      onClick={() => setSelectedScreenshot(shot)}
-                      style={{ cursor: "pointer" }}
-                    >
-                      <div className="cs-gallery-img-wrapper">
-                        <img src={shot.url} alt={shot.caption} className="cs-gallery-img" />
+                {isSocialMediaCategory ? (
+                  <div className="cs-collage-grid">
+                    {screenshots.map((shot, idx) => (
+                      <motion.div
+                        key={idx}
+                        className="cs-collage-item"
+                        whileHover={{ y: -2 }}
+                        onClick={() => setSelectedScreenshot(shot)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <img src={shot.url} alt={shot.caption} className="cs-collage-img" />
                         <div className="cs-gallery-hover-overlay">
                           <span className="cs-gallery-zoom-btn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: "20px", height: "20px" }}>
@@ -231,14 +232,37 @@ export default function CaseStudy({ project, onBack }) {
                             </svg>
                           </span>
                         </div>
-                      </div>
-                      <div className="cs-gallery-info">
-                        <span className="cs-gallery-index">Mockup 0{idx + 1}</span>
-                        <p className="cs-gallery-caption dim">{shot.caption}</p>
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="cs-gallery-grid">
+                    {screenshots.map((shot, idx) => (
+                      <motion.div
+                        key={idx}
+                        className="cs-gallery-card"
+                        whileHover={{ y: -6 }}
+                        onClick={() => setSelectedScreenshot(shot)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <div className="cs-gallery-img-wrapper">
+                          <img src={shot.url} alt={shot.caption} className="cs-gallery-img" />
+                          <div className="cs-gallery-hover-overlay">
+                            <span className="cs-gallery-zoom-btn">
+                              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: "20px", height: "20px" }}>
+                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                        <div className="cs-gallery-info">
+                          <span className="cs-gallery-index">Mockup 0{idx + 1}</span>
+                          <p className="cs-gallery-caption dim">{shot.caption}</p>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 

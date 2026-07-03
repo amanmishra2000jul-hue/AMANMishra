@@ -733,5 +733,67 @@ export const work = [
         { url: "/Food Bridge app/f6989a184042261.654a94e5bad07.webp", caption: "Food Bridge mobile screen mockup 14 showing user dashboard lists and routing details" }
       ]
     }
+  },
+  {
+    id: "smm-brand-campaigns",
+    title: "SMM Brand Campaigns",
+    category: "Social Media Posts",
+    description: "Vibrant, high-engagement graphics, carousels, and templates created for multi-channel social media marketing campaigns.",
+    tags: ["Social Design", "Figma Templates", "Instagram Collage", "LinkedIn Growth"],
+    image: "/SMM/WhatsApp Image 2026-07-03 at 5.18.39 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      org: "SMM Campaigns",
+      role: "Social Media Designer",
+      subtitle: "Curated Brand Graphics & Instagram Collages",
+      overview: "A collection of high-impact visual post systems designed to optimize social media feed aesthetics, carousel flow structures, and lead generation banners.",
+      challenge: "Standard static square posts lack visual hierarchy and fail to stop users from scrolling past. Traditional layouts feel repetitive and fail to stand out.",
+      solution: "We designed a bespoke collage layout that arranges a large selection of posts of varying sizes in a clean, tight masonry collage grid. This allows users to view carousels and standalone quotes as a single premium brand tapestry.",
+      duration: "6 Months (Jan — Jun 2026)",
+      deliverables: ["Visual Social Media Guidelines", "LinkedIn Slide deck templates", "Custom Vector Illustrations Pack", "Collage Grid Layout Guides"],
+      results: [
+        { label: "Organic Post Views", value: "+128%" },
+        { label: "Content Creation Capacity", value: "3.5x Faster" },
+        { label: "Brand Recall Metrics", value: "95% positive" }
+      ],
+      colors: [
+        { name: "Neon Violet", hex: "#8B5CF6", usage: "Action borders, active status points, and typography marks" },
+        { name: "Contrast Sand", hex: "#F59E0B", usage: "Quotes highlights and stats text callouts" },
+        { name: "Charcoal Frame", hex: "#111827", usage: "Post cards backgrounds and canvas grids" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold geometric displays built to command attention in scroll timelines, paired with clean technical font scaling."
+      },
+      screenshots: [
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.18.39 PM.jpeg", caption: "Social media graphics asset 1" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.22.08 PM.jpeg", caption: "Social media graphics asset 2" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.23.17 PM.jpeg", caption: "Social media graphics asset 3" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.24.15 PM.jpeg", caption: "Social media graphics asset 4" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.25.19 PM.jpeg", caption: "Social media graphics asset 5" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.26.50 PM.jpeg", caption: "Social media graphics asset 6" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.28.08 PM.jpeg", caption: "Social media graphics asset 7" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.29.07 PM.jpeg", caption: "Social media graphics asset 8" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.30.22 PM.jpeg", caption: "Social media graphics asset 9" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.45.00 PM (1).jpeg", caption: "Social media graphics asset 10" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.45.00 PM.jpeg", caption: "Social media graphics asset 11" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.47.16 PM (1).jpeg", caption: "Social media graphics asset 12" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.47.16 PM (2).jpeg", caption: "Social media graphics asset 13" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.47.16 PM.jpeg", caption: "Social media graphics asset 14" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.47.17 PM.jpeg", caption: "Social media graphics asset 15" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.49.58 PM.jpeg", caption: "Social media graphics asset 16" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.49.59 PM (1).jpeg", caption: "Social media graphics asset 17" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.49.59 PM.jpeg", caption: "Social media graphics asset 18" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.53.11 PM.jpeg", caption: "Social media graphics asset 19" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 5.56.32 PM.jpeg", caption: "Social media graphics asset 20" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.01.01 PM.jpeg", caption: "Social media graphics asset 21" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.01.41 PM.jpeg", caption: "Social media graphics asset 22" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.53 PM (1).jpeg", caption: "Social media graphics asset 23" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.53 PM.jpeg", caption: "Social media graphics asset 24" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.54 PM (1).jpeg", caption: "Social media graphics asset 25" },
+        { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.54 PM.jpeg", caption: "Social media graphics asset 26" }
+      ]
+    }
   }
 ];
