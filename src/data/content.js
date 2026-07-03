@@ -1,14 +1,3 @@
-import kpmgDashboard from "../assets/kpmg_dashboard.png";
-import kpmgChatbot from "../assets/kpmg_chatbot.png";
-import kpmgDesignSystem from "../assets/kpmg_design_system.png";
-import kpmgArchitecture from "../assets/kpmg_architecture.png";
-
-// New category mockups
-import kpmgWebsite from "../assets/kpmg_website.png";
-import kpmgMobile from "../assets/kpmg_mobile.png";
-import kpmgSocial from "../assets/kpmg_social.png";
-import kpmgBranding from "../assets/kpmg_branding.png";
-import kpmgMarketing from "../assets/kpmg_marketing.png";
 import augreyDashboard from "../assets/augrey_dashboard.png";
 import friendlyFlan from "../assets/friendly_flan.png";
 import eastPoint from "../assets/eastpoint.png";
@@ -81,254 +70,36 @@ export const experience = [
   },
 ];
 
-// Selected Case Studies of Web Development and Design at KPMG
+// Selected Case Studies of Web Development and Design
 export const work = [
   {
-    id: "kpmg-dashboard",
-    title: "KPMG Client Solutions Suite",
+    id: "meridian-terminal",
+    title: "Meridian Trading Terminal",
     category: "Web applications",
-    description: "Enterprise software product dashboard built for client intelligence telemetry, metrics analytics, and service operations tracking. Created a responsive UI/UX that presents complex data tables and interactive charts in a dark-themed aesthetic.",
-    tags: ["React", "Vite", "D3.js", "System Design"],
-    image: kpmgDashboard,
-    link: "#",
+    description: "High-fidelity stock and cryptocurrency trading terminal dashboard containing interactive price charts, real-time portfolio tracking, order lists, and customizable settings.",
+    tags: ["React", "Vite", "SVG Charts", "Trading Terminal"],
+    image: "/meridian.png",
+    link: "https://stellular-banoffee-158add.netlify.app/",
     caseStudy: {
-      subtitle: "Enterprise Intelligence Telemetry & Metrics",
-      overview: "The KPMG Client Solutions Suite is a next-generation enterprise telemetry dashboard. It enables large-scale operations tracking, client query monitoring, and visual data graphing. The objective was to design a clean, responsive, dark-mode analytical interface that simplifies thousands of system logs and presents high-level KPIs in an easily digestible layout.",
-      challenge: "Enterprise clients struggled with cluttered log tables, confusing configurations, and slow render speeds. They needed a tool that was not only fast and responsive but also presented insights clearly, allowing solutions leads to troubleshoot client issues instantly.",
-      solution: "We engineered a React and Vite application utilizing D3.js for GPU-accelerated chart rendering. The user interface was structured with a premium, low-fatigue dark layout, emphasizing data highlights with a vibrant red accent.",
-      duration: "6 Months (Oct 2024 — Mar 2026)",
-      deliverables: ["Telemetry Dashboard", "Interactive Data Tables", "Custom Chart Engine", "Design System Library"],
-      results: [
-        { label: "Rendering Speedup", value: "4.8x" },
-        { label: "Client Onboarding Time", value: "-35%" },
-        { label: "User Task Completion", value: "+28%" }
-      ],
+      subtitle: "Responsive Cryptocurrency & Stock Trading Terminal",
+      overview: "Meridian is a high-fidelity crypto and stock trading terminal. It features interactive SVG price charts, a real-time portfolio tracker, order history list, sector-specific market screener, and customizable alerts settings panel.",
+      challenge: "Traders need low-latency terminal dashboards that compile system metrics and charts cleanly without clunky layout shifts on mobile device sizes.",
+      solution: "Developed a modular React dashboard client utilizing SVG for responsive chart rendering and responsive layout cards with zero layout shifts on small viewports.",
+      duration: "3 Months (May — Jul 2026)",
+      deliverables: ["Interactive Candlestick Chart", "Real-Time Portfolio Tracker", "Stock & Crypto Screener Grid", "Responsive Settings Dashboard"],
+      results: [],
       colors: [
-        { name: "Primary Accent Red", hex: "#E2261C", usage: "Key highlights, buttons, and alert signals" },
-        { name: "Ink Cream", hex: "#F3ECE1", usage: "Main body text, readable values, and tags" },
-        { name: "Soft Charcoal", hex: "#17120F", usage: "Primary dashboard card backgrounds" }
+        { name: "Brand Blue", hex: "#0A84FF", usage: "Primary actions and active indicator tags" },
+        { name: "Secure Green", hex: "#30D158", usage: "Price metrics increase and filled states" },
+        { name: "Dashboard Dark", hex: "#0A0A0B", usage: "Terminal canvas background frame" }
       ],
       typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Anton serves as a high-contrast heading element, emphasizing main KPIs, while Space Grotesk offers geometric readability for multi-column data grids."
+        headlineFont: "Inter",
+        bodyFont: "Inter",
+        description: "Clean, readable sans-serif typography paired with monospaced numbers ensures numerical precision on grids."
       },
       screenshots: [
-        { url: kpmgDashboard, caption: "Main dashboard mockup with telemetry data grids" },
-        { url: kpmgDesignSystem, caption: "Reusable UI components and color guide stylesheet" },
-        { url: kpmgArchitecture, caption: "System architecture design flow and backend data pipelines" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-chatbot",
-    title: "GPT-3 Enterprise Assistant",
-    category: "Web applications",
-    description: "An advanced conversational interface chatbot designed to ingest complex regulatory files and answer client queries. Created a custom chat timeline with smooth Framer Motion micro-animations, improving user engagement and model accuracy by 15%.",
-    tags: ["LLM Integration", "React", "CSS Grid", "Framer Motion"],
-    image: kpmgChatbot,
-    link: "#",
-    caseStudy: {
-      subtitle: "AI-Powered Conversational Knowledge Base",
-      overview: "A custom artificial intelligence chat interface developed to ingest complex financial regulatory policies and answer questions from KPMG client solution leads. By combining a GPT-3 LLM backend with a responsive, animated chat frontend, the project streamlined search times for solutions guidelines.",
-      challenge: "Client solutions leads spent hours searching through long regulatory PDFs. They needed a chatbot interface that could fetch answers contextually and showcase search citations in a clear, interactive timeline.",
-      solution: "We designed a conversation-centric web interface with rich text rendering, collapsible sidebar citations, and fluid transition animations between response bubbles.",
-      duration: "4 Months (Jul — Nov 2024)",
-      deliverables: ["Conversational Chat UI", "Citations Sidebar", "System Administration Panel", "API Integration Pipeline"],
-      results: [
-        { label: "Search Efficiency", value: "+60%" },
-        { label: "Model Query Accuracy", value: "+15%" },
-        { label: "Daily Active Users", value: "240+" }
-      ],
-      colors: [
-        { name: "Accent Red", hex: "#E2261C", usage: "Chat toggle keys and user active states" },
-        { name: "Muted Cream", hex: "#B9AFA2", usage: "Bot chat speech text, timestamps, and details" },
-        { name: "Midnight Frame", hex: "#0E0C0B", usage: "Core background canvas and sidebar" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Bold sans-serif headlines paired with clean monospaced body structures for bubble dialog text."
-      },
-      screenshots: [
-        { url: kpmgChatbot, caption: "GPT-3 enterprise chat layout with dynamic prompt timelines" },
-        { url: kpmgDesignSystem, caption: "Component system variables and UI guidelines" },
-        { url: kpmgArchitecture, caption: "Data ingestion pipeline architecture details" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-website",
-    title: "KPMG Consulting Portal",
-    category: "Website",
-    description: "Corporate platform designed to showcase consulting practices, digital transformation insights, and advisory services. Fully optimized for high SEO performance, accessibility, and smooth asset downloads.",
-    tags: ["React", "Vite", "SEO Suite", "A11y Standards"],
-    image: kpmgWebsite,
-    link: "#",
-    caseStudy: {
-      subtitle: "Modern High-Performance Corporate Hub",
-      overview: "Designed and engineered the central web presence for KPMG's global advisory division, highlighting digital services and leadership columns.",
-      challenge: "The old portal suffered from low user engagement, poor search engine visibility, and slow load times for client whitepaper assets.",
-      solution: "Implemented a blazing-fast React and Vite structure with semantic HTML, serverless asset delivery, and responsive CSS frameworks, boosting PageSpeed score to 99%.",
-      duration: "3 Months (Apr — Jun 2024)",
-      deliverables: ["Global Corporate Portal", "SEO Optimization Suite", "Resource Download Hub", "Accessibility Guidelines (WCAG)"],
-      results: [
-        { label: "Search Visibility", value: "+85%" },
-        { label: "Asset Downloads", value: "+45%" },
-        { label: "Load Time Reduction", value: "2.4s" }
-      ],
-      colors: [
-        { name: "Bright Red Accent", hex: "#E2261C", usage: "Call to action buttons and hover lines" },
-        { name: "Cream Text", hex: "#F3ECE1", usage: "Main editorial titles and links" },
-        { name: "Deep Charcoal", hex: "#17120F", usage: "Section backgrounds and grid cards" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Bold, uppercase title styling gives the consulting portal a modern magazine look, contrasted by geometric body copy that reads easily on mobile."
-      },
-      screenshots: [
-        { url: kpmgWebsite, caption: "Corporate landing page layout with conversion metrics grids" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-mobile",
-    title: "Field Audit Assistant",
-    category: "Mobile apps",
-    description: "Secure, high-contrast mobile dashboard designed for auditing teams executing real-time inspections in remote logistics centers and warehouses.",
-    tags: ["React Native", "TailwindCSS", "Node.js", "Data Flow"],
-    image: kpmgMobile,
-    link: "#",
-    caseStudy: {
-      subtitle: "On-the-go Operations Command Center",
-      overview: "Developed a high-fidelity mobile application interface focused on ease of navigation in low-connectivity logistics warehouses.",
-      challenge: "Auditors working in remote facilities had to deal with complex data input forms on sluggish desktop views, leading to data loss.",
-      solution: "Designed a lightweight React Native client with local SQL databases, clear visual alerts, large touch targets, and automated offline data queuing.",
-      duration: "5 Months (Jan — May 2025)",
-      deliverables: ["React Native Client", "Offline Data Sync Engine", "Audit Forms System", "Alert Notification Suite"],
-      results: [
-        { label: "Audit Speed", value: "+40%" },
-        { label: "Input Error Rate", value: "-22%" },
-        { label: "Daily Active Auditors", value: "1,200+" }
-      ],
-      colors: [
-        { name: "Safety Orange-Red", hex: "#E2261C", usage: "Critical warnings and high-priority alerts" },
-        { name: "Off-White Value", hex: "#F3ECE1", usage: "Large metrics numbers and primary labels" },
-        { name: "Slate base", hex: "#0E0C0B", usage: "App canvas and bottom navigation deck" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Clean, robust sans-serif fonts chosen specifically to ensure maximum readability under direct warehouse fluorescent glare."
-      },
-      screenshots: [
-        { url: kpmgMobile, caption: "Mobile ops command center dashboard featuring alerts timelines" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-social",
-    title: "Tech Insights Branding Campaign",
-    category: "Social Media Posts",
-    description: "Visual marketing campaign consisting of dynamic content templates, infographics, and carousel layouts designed to translate technical reports into high-engagement slides.",
-    tags: ["Brand Strategy", "Figma Design", "Social Identity", "Infographics"],
-    image: kpmgSocial,
-    link: "#",
-    caseStudy: {
-      subtitle: "Data-Driven Visual Social Narrative",
-      overview: "Crafted a multi-platform visual identity and templates suite to present complex tech trends to decision makers on LinkedIn and Instagram.",
-      challenge: "Engagement on technical whitepapers was low due to wall-of-text formatting and generic stock visuals on corporate accounts.",
-      solution: "Created bespoke infographic cards, bold stats callouts, and clean checklists in a premium dark slate aesthetic.",
-      duration: "3 Months (Sep — Nov 2025)",
-      deliverables: ["LinkedIn Templates Library", "Animated Story Mockups", "Tech Infographics Suite", "Social Guidelines PDF"],
-      results: [
-        { label: "Engagement Rate", value: "+128%" },
-        { label: "Monthly Reach", value: "92K+" },
-        { label: "Inbound Leads", value: "+35%" }
-      ],
-      colors: [
-        { name: "Attention Red", hex: "#E2261C", usage: "High-contrast highlights and title underlines" },
-        { name: "Warm Cream", hex: "#F3ECE1", usage: "Text labels and slide content summaries" },
-        { name: "Carbon Slate", hex: "#17120F", usage: "Card templates background" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Bold headings to capture attention in scrolling timelines, combined with monospaced accents to emphasize technology data points."
-      },
-      screenshots: [
-        { url: kpmgSocial, caption: "Visual grid layout showing social posts with conversion metrics graphics" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-branding",
-    title: "AI Suite Identity System",
-    category: "Branding & Marketing",
-    description: "A cohesive brand identity system including logo design, color guidelines, custom icons, and typography specifications for KPMG's enterprise AI products.",
-    tags: ["Brand Guidelines", "Vector Design", "Logo Mark", "Icon Set"],
-    image: kpmgBranding,
-    link: "#",
-    caseStudy: {
-      subtitle: "Corporate Identity for Next-Gen Solutions",
-      overview: "Established the visual guidelines, logo system, and core assets for the KPMG enterprise AI solution portfolio.",
-      challenge: "New AI product tools lacked visual consistency, making it hard for clients to associate them with the parent company's brand, hurting cross-sales.",
-      solution: "Engineered a geometric logo mark combining KPMG colors with modern tech cues, alongside a detailed digital brand book for internal developers.",
-      duration: "4 Months (Nov 2024 — Feb 2025)",
-      deliverables: ["Core Brand Guidelines", "Vector Logo Library", "Custom Icon Set (32 icons)", "Corporate Stationary Layouts"],
-      results: [
-        { label: "Product Alignment", value: "100%" },
-        { label: "Teams Adopting Rules", value: "12 teams" },
-        { label: "Marketing Delivery Speed", value: "3.5x" }
-      ],
-      colors: [
-        { name: "Corporate Red", hex: "#E2261C", usage: "Primary brand mark symbol and active states" },
-        { name: "Guideline Cream", hex: "#F3ECE1", usage: "Documentation header labels and layout grid lines" },
-        { name: "Dark Neutral", hex: "#0E0C0B", usage: "Documentation background and canvas frames" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Strict typographic scale using bold geometric layouts for visual hierarchy in documents and stationery."
-      },
-      screenshots: [
-        { url: kpmgBranding, caption: "Brand identity guidelines sheet showing typography and custom icons list" }
-      ]
-    }
-  },
-  {
-    id: "kpmg-marketing",
-    title: "Future of Audit Campaign",
-    category: "Branding & Marketing",
-    description: "Multi-channel digital marketing drive promoting KPMG's smart audit telemetry services to enterprise CFOs and finance leaders.",
-    tags: ["Lead Generation", "Google Ads", "Email Sequences", "Analytics Dashboard"],
-    image: kpmgMarketing,
-    link: "#",
-    caseStudy: {
-      subtitle: "Growth Campaign for Enterprise Audit Tools",
-      overview: "Designed, launched, and tracked a comprehensive growth marketing campaign including landing pages, search ads, and email sequences.",
-      challenge: "C-level executives were unaware of KPMG's automated audit speed capability, relying on slower traditional service queries.",
-      solution: "Constructed targeted landing pages showing interactive ROI calculators and automated email updates on audit status.",
-      duration: "4 Months (Feb — May 2026)",
-      deliverables: ["Conversion Landing Page", "Email Sequence Automation", "Ad Creative Asset Pack", "Analytics Dashboard Interface"],
-      results: [
-        { label: "Campaign ROI", value: "2.8x" },
-        { label: "SQLs Generated", value: "480+" },
-        { label: "C-Level Conversion Rate", value: "5.8%" }
-      ],
-      colors: [
-        { name: "Conversion Red", hex: "#E2261C", usage: "Action tags, call-outs, and value gauges" },
-        { name: "Warm Cream", hex: "#F3ECE1", usage: "Text headlines and email templates font" },
-        { name: "Midnight Charcoal", hex: "#0E0C0B", usage: "Landing page background block" }
-      ],
-      typography: {
-        headlineFont: "Anton",
-        bodyFont: "Space Grotesk",
-        description: "Anton was chosen to emphasize core figures and percentage values, while Space Grotesk supports the main reading columns."
-      },
-      screenshots: [
-        { url: kpmgMarketing, caption: "Growth campaign analytics sheet showing ad creatives and email layout preview" }
+        { url: "/meridian.png", caption: "Meridian Trading Terminal Main Dashboard View" }
       ]
     }
   },
@@ -717,6 +488,7 @@ export const work = [
         description: "Highly visible rounded text scales optimize mobile driver route navigation and quick pickup checkout forms."
       },
       screenshots: [
+        { url: "/Food Bridge app/Home screen.webp", caption: "Food Bridge mobile screen mockup 10 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/211bbf184042261.654a94e5bc045.webp", caption: "Food Bridge mobile screen mockup 1 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/3c7dc7184042261.654a94e5ba28c.webp", caption: "Food Bridge mobile screen mockup 2 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/4f2d72184042261.654a94e5c05cb.webp", caption: "Food Bridge mobile screen mockup 3 showing user dashboard lists and routing details" },
@@ -726,7 +498,6 @@ export const work = [
         { url: "/Food Bridge app/8008b7184042261.654a94e5be68d.webp", caption: "Food Bridge mobile screen mockup 7 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/844b6c184042261.654a94e5bfd0d.webp", caption: "Food Bridge mobile screen mockup 8 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/9a4bb4184042261.654a94e5bd351.webp", caption: "Food Bridge mobile screen mockup 9 showing user dashboard lists and routing details" },
-        { url: "/Food Bridge app/Home screen.webp", caption: "Food Bridge mobile screen mockup 10 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/a63caa184042261.654a94e5b8eeb.webp", caption: "Food Bridge mobile screen mockup 11 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/bbd278184042261.654a94e5bf1cb.webp", caption: "Food Bridge mobile screen mockup 12 showing user dashboard lists and routing details" },
         { url: "/Food Bridge app/dd77c4184042261.654a94e5bcaa6.webp", caption: "Food Bridge mobile screen mockup 13 showing user dashboard lists and routing details" },
@@ -793,6 +564,375 @@ export const work = [
         { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.53 PM.jpeg", caption: "Social media graphics asset 24" },
         { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.54 PM (1).jpeg", caption: "Social media graphics asset 25" },
         { url: "/SMM/WhatsApp Image 2026-07-03 at 6.03.54 PM.jpeg", caption: "Social media graphics asset 26" }
+      ]
+    }
+  },
+  {
+    id: "ambient-sound",
+    title: "Ambient Sound Master",
+    category: "Mobile apps",
+    description: "Personalized soundscape generator mobile application providing immersive white noise, nature sounds, and sleep focus loops.",
+    tags: ["React Native", "Audio Stream", "UX Design", "Sleep Tech"],
+    image: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.17.03 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Personalized Sleep & Focus Soundscapes",
+      overview: "Ambient Sound Master is a custom mobile sound generator. It allows users to mix and match sleep sounds, nature audio streams, and white noise frequencies into personalized soundscapes.",
+      challenge: "Standard sleep sound apps have repetitive audio loops, low-quality transitions, and heavy memory usage on low-connectivity devices.",
+      solution: "Designed a lightweight mobile frontend client using React Native, integrating low-latency audio stream buffers and fluid CSS animations for sleeping mode.",
+      duration: "4 Months (Nov 2025 — Feb 2026)",
+      deliverables: ["React Native Audio Client", "Custom Mixing Dashboard", "Audio Stream Optimization Buffer", "Soundscape Library UI"],
+      results: [],
+      colors: [
+        { name: "Deep Indigo BG", hex: "#0E0C0B", usage: "Main interface canvas background" },
+        { name: "Soundwave Orange", hex: "#E2261C", usage: "Active player buttons, frequency curves, and tag highlights" },
+        { name: "Cream Text", hex: "#F3ECE1", usage: "Titles and primary menu descriptions" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold headings deliver energy for custom controls, paired with sleek space-scale sans-serif text blocks."
+      },
+      screenshots: [
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.17.03 PM.jpeg", caption: "Ambient Sound Main Home Screen and Active Audio Player Mockup" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.17.24 PM.jpeg", caption: "Soundscape mixer controls panel" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.17.47 PM.jpeg", caption: "Timer customizer and alarm setting screens" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.17.57 PM.jpeg", caption: "Nature audio streams library catalog" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.09 PM.jpeg", caption: "Favorite sound combinations cloud sync options" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.17 PM.jpeg", caption: "Custom noise color options (pink, brown, white noise)" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.26 PM.jpeg", caption: "Binaural beat generators selection UI" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.35 PM.jpeg", caption: "User focus telemetry history chart" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.44 PM.jpeg", caption: "Offline download library controller" },
+        { url: "/Ambient sound/WhatsApp Image 2026-07-03 at 11.18.54 PM.jpeg", caption: "Device settings & audio quality sliders" }
+      ]
+    }
+  },
+  {
+    id: "food-delivery",
+    title: "Food Express Delivery",
+    category: "Mobile apps",
+    description: "On-demand fresh food delivery client app featuring real-time kitchen tracking, personalized diet filters, and secure cart management.",
+    tags: ["React Native", "GPS Sync", "Stripe Payments", "UX Wireframes"],
+    image: "/Food /WhatsApp Image 2026-07-03 at 10.19.25 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "On-Demand Delivery & Kitchen Tracking",
+      overview: "Food Express is a mobile delivery client designed to minimize ordering friction. It features highly visual menus, kitchen telemetry (status indicators), and real-time route mappings.",
+      challenge: "Cluttered checkout structures, missing filter states, and slow location lookups cause users to drop off before checkout.",
+      solution: "Created an optimized, highly visual multi-step checkout flow with responsive filters, clear order status cards, and integrated maps API tracking.",
+      duration: "5 Months (Jun — Oct 2025)",
+      deliverables: ["Food Ordering Client App", "Real-Time Tracking Panel", "Custom Food Categories Grid", "Express Checkout API Pipeline"],
+      results: [],
+      colors: [
+        { name: "Active Green", hex: "#10B981", usage: "Success states, order complete tags, and brand badges" },
+        { name: "Alert Red", hex: "#E2261C", usage: "Action buttons, live pointers, and cart numbers" },
+        { name: "Clean White BG", hex: "#F9FAFB", usage: "Light-mode cards and background components" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold uppercase headings pairing with geometric body structures optimize quick navigation in menus."
+      },
+      screenshots: [
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.19.25 PM.jpeg", caption: "Food Express Welcome Screen and Home Dashboard Mockup" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.19.35 PM.jpeg", caption: "Restaurant profile and menu selection grid" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.20.23 PM.jpeg", caption: "Dynamic food options and cart overview list" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.20.50 PM.jpeg", caption: "Detailed active order tracking timeline" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.21.38 PM.jpeg", caption: "Search filters and category selections list" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.22.06 PM.jpeg", caption: "Delivery details form and payment selection" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.22.29 PM.jpeg", caption: "Active order progress status indicator" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.22.47 PM.jpeg", caption: "User profile settings and payment cards history" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.22.58 PM.jpeg", caption: "Promo banners and referral reward panel" },
+        { url: "/Food /WhatsApp Image 2026-07-03 at 10.23.10 PM.jpeg", caption: "Receipt summary and feedback rating screen" }
+      ]
+    }
+  },
+  {
+    id: "gym-fitness",
+    title: "Gym Fitness Workout Tracker",
+    category: "Mobile apps",
+    description: "Cross-platform personal training log and routine builder with audio guidance, workout metrics charts, and heart rate integration.",
+    tags: ["React Native", "Biometrics", "Local Storage", "Fitness IoT"],
+    image: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.35.35 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Personal Training Log & Performance Metrics",
+      overview: "Gym Fitness is a high-contrast workout telemetry application. It supports building custom routines, logging set weights, and visualizing heart rate history charts in real-time.",
+      challenge: "Logging workouts during a high-intensity session requires speed. Clunky multi-step forms make logging sets slow and cause users to abandon their log.",
+      solution: "Designed a simple 'one-tap set complete' UI with a high-contrast dark layout, minimizing fatigue and allowing instant logs of sets, reps, and active rest times.",
+      duration: "3 Months (Jan — Mar 2026)",
+      deliverables: ["Workout Tracking App Client", "Routine Builder Component", "Telemetry Charts Integration", "Local SQLite Log Database"],
+      results: [],
+      colors: [
+        { name: "Gym Violet", hex: "#8B5CF6", usage: "Primary routine tags and active exercises indicators" },
+        { name: "Accent Red", hex: "#E2261C", usage: "Critical telemetry warnings and timer states" },
+        { name: "Ink Cream", hex: "#F3ECE1", usage: "Main body text and workout log inputs" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold sans-serif headlines paired with clean monospaced body structures for dense workout tables."
+      },
+      screenshots: [
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.35.35 PM.jpeg", caption: "Gym Fitness Home Workout Tracker Dashboard Mockup" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.35.49 PM.jpeg", caption: "Workout routine details and exercises list" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.35.58 PM.jpeg", caption: "Active workout tracker timer screen" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.36.33 PM.jpeg", caption: "Weekly performance telemetry history graphs" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.36.42 PM.jpeg", caption: "Custom routine creator form panel" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.36.50 PM.jpeg", caption: "User weight log history chart" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.37.09 PM.jpeg", caption: "Exercise tutorials video directory" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.37.17 PM.jpeg", caption: "Goal setter and milestone details page" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.37.25 PM.jpeg", caption: "Personal profile achievements checklist" },
+        { url: "/Gym fitness/WhatsApp Image 2026-07-03 at 10.37.35 PM.jpeg", caption: "App settings and local data sync console" }
+      ]
+    }
+  },
+  {
+    id: "luxe-booking",
+    title: "Luxe Stay Booking",
+    category: "Mobile apps",
+    description: "Premium hotel and hospitality booking client app showcasing rich resort galleries, dynamic room selection, and concierge chats.",
+    tags: ["React Native", "Interactive Map", "Animations", "Luxury Branding"],
+    image: "/Luxe/WhatsApp Image 2026-07-03 at 10.09.23 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "High-End Resort & Hospitality Booking Client",
+      overview: "Luxe Stay Booking is a premium mobile app designed for high-end boutique hotels. It unifies luxury resort catalog listings, interactive custom map check-ins, and direct concierge messaging.",
+      challenge: "Standard booking tools feel generic and fail to showcase high-fidelity resort photos, lowering conversions for luxury suites.",
+      solution: "Engineered a minimalist, premium layout emphasizing rich, full-screen asset sliders, fluid transitions, and a streamlined concierge chat console.",
+      duration: "4 Months (Sep — Dec 2025)",
+      deliverables: ["Luxury Booking Mobile Client", "Interactive Map API Panel", "Concierge Chat Component", "Resort Profile Page Layout"],
+      results: [],
+      colors: [
+        { name: "Luxury Gold", hex: "#D97706", usage: "Rating stars, gold badges, and premium action states" },
+        { name: "Midnight Canvas", hex: "#0E0C0B", usage: "Main editorial background structure" },
+        { name: "Contrast Sand", hex: "#F3ECE1", usage: "Main typography headlines and lists" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold sans-serif headlines communicate premium brand alignment, paired with readable geometric scales."
+      },
+      screenshots: [
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.09.23 PM.jpeg", caption: "Luxe Stay Main Landing Page and Resort Selection Grid Mockup" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.10.26 PM.jpeg", caption: "Resort catalog listing page with filters" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.10.36 PM.jpeg", caption: "Boutique hotel details and room selection panel" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.10.58 PM.jpeg", caption: "High-resolution photo slider and ratings review" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.11.15 PM.jpeg", caption: "Interactive maps checkout and directions grid" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.11.39 PM.jpeg", caption: "Booking details review and user forms" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.11.55 PM.jpeg", caption: "Confirm booking ticket and barcode check-in" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.12.08 PM.jpeg", caption: "Concierge live chat message history screen" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.03 PM.jpeg", caption: "Payment history and card manager page" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.15 PM.jpeg", caption: "Special promo codes and holiday deals checklist" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.24 PM.jpeg", caption: "User settings and security dashboard" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.33 PM.jpeg", caption: "Notification alerts and message manager" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.45 PM.jpeg", caption: "Helpdesk support and FAQ details" },
+        { url: "/Luxe/WhatsApp Image 2026-07-03 at 10.13.57 PM.jpeg", caption: "Log out panel and account review check" }
+      ]
+    }
+  },
+  {
+    id: "voyage-planner",
+    title: "Voyage Travel Planner",
+    category: "Mobile apps",
+    description: "Immersive itinerary planning client app with collaborative group mapping, ticket storage, and offline travel advice.",
+    tags: ["React Native", "Offline Mode", "Maps API", "Travel Companion"],
+    image: "/Voyage/WhatsApp Image 2026-07-03 at 11.01.48 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Collaborative Trip Planning & Offline Itineraries",
+      overview: "Voyage Travel Planner is a mobile travel companion app. It supports creating group itineraries, pins travel tickets contextually, and works offline in remote regions.",
+      challenge: "Traveling in low-connectivity areas makes cloud-reliant travel apps useless. Users need instant access to local transport maps and flight tickets.",
+      solution: "Engineered a React Native app that caches all active trip assets to a local SQL database and loads transport maps, route directions, and check-in tickets instantly.",
+      duration: "4 Months (Jul — Oct 2025)",
+      deliverables: ["Voyage App Mobile Client", "Offline Maps Sync Engine", "Itinerary Scheduler Component", "Ticket PDF Wallet UI"],
+      results: [],
+      colors: [
+        { name: "Travel Blue", hex: "#3B82F6", usage: "Main flight buttons, active route highlights, and indicators" },
+        { name: "Accent Red", hex: "#E2261C", usage: "Urgent check-in notifications and departure warnings" },
+        { name: "Soft Charcoal BG", hex: "#17120F", usage: "Primary dashboard panels and menu backgrounds" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold sans-serif headlines communicate travel adventure, paired with readable monospaced coordinates."
+      },
+      screenshots: [
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.01.48 PM.jpeg", caption: "Voyage Travel Planner Welcome Landing Screen and Active Trips Mockup" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.02.02 PM.jpeg", caption: "New travel itinerary creation screen" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.02.34 PM.jpeg", caption: "Daily schedule timelines and activities list" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.02.41 PM.jpeg", caption: "Interactive routes map and direction pins" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.02.49 PM.jpeg", caption: "Hotel details and accommodation booking cards" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.02.59 PM.jpeg", caption: "Flight flight details and departures alert" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.10 PM.jpeg", caption: "Group travel collaborators chat panel" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.18 PM.jpeg", caption: "Packing checklist and essentials count tracker" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.26 PM.jpeg", caption: "Expense logs and group splitting details" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.37 PM.jpeg", caption: "Offline local travel advisory lists" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.48 PM.jpeg", caption: "Ticket wallet and QR barcode scanner page" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.03.58 PM.jpeg", caption: "Destination photo memories diary gallery" },
+        { url: "/Voyage/WhatsApp Image 2026-07-03 at 11.04.09 PM.jpeg", caption: "Settings panel and database backup sync console" }
+      ]
+    }
+  },
+  {
+    id: "analytics-telemetry",
+    title: "Enterprise Analytics Suite",
+    category: "Web applications",
+    description: "Comprehensive business intelligence and telemetry web dashboard translating complex cloud service operations into interactive SVG metrics charts.",
+    tags: ["React", "Vite", "D3.js", "Enterprise SaaS"],
+    image: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.09 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Business Intelligence & Telemetry Analytics Suite",
+      overview: "The Enterprise Analytics Suite is a web portal built to aggregate server telemetry logs. It provides D3.js powered custom charts, data grids, and filter templates to streamline IT infrastructure monitoring.",
+      challenge: "Systems administrators struggle to read huge logs. They need a dashboard that visualizes network spikes and tracks data pipelines instantly.",
+      solution: "Engineered a modular React application using Vite and TailwindCSS, incorporating accelerated charts, real-time filters, and clean tables.",
+      duration: "4 Months (Sep — Dec 2025)",
+      deliverables: ["Telemetry Dashboard Portal", "Custom D3.js Charts Engine", "Data Grid Filter Library", "Operations API Integration Panel"],
+      results: [],
+      colors: [
+        { name: "Telemetry Blue", hex: "#3B82F6", usage: "Data charts lines, indicators, and buttons" },
+        { name: "Vibrant Red", hex: "#E2261C", usage: "Critical alerts, errors, and system warnings" },
+        { name: "Charcoal BG", hex: "#0E0C0B", usage: "Main dashboard canvas background" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Aggressive display titles paired with monospaced body systems make detailed reports easy to skim."
+      },
+      screenshots: [
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.09 PM.jpeg", caption: "Analytics Suite Main Telemetry Grid and Server Performance Mockup" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.17 PM.jpeg", caption: "Interactive data charts showing transaction volumes" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.22 PM.jpeg", caption: "Data pipe logs and database latency lists" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.29 PM.jpeg", caption: "Detailed user conversion funnel tracking metrics" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.35 PM.jpeg", caption: "Custom report generator configuration page" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.42 PM.jpeg", caption: "Weekly performance telemetry history graphs" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.49 PM.jpeg", caption: "Active node alert configuration panel" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.43.55 PM.jpeg", caption: "Cloud integration sync settings panel" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.44.06 PM.jpeg", caption: "Database status monitoring checklists" },
+        { url: "/Analytics/WhatsApp Image 2026-07-03 at 11.44.13 PM.jpeg", caption: "Audit checklist details and export records console" }
+      ]
+    }
+  },
+  {
+    id: "health-telemetry",
+    title: "Health Track Dashboard",
+    category: "Web applications",
+    description: "Responsive clinical analytics platform for monitoring patient telemetry, scheduling appointments, and syncing EHR data.",
+    tags: ["React", "TailwindCSS", "Recharts", "HIPAA Compliance"],
+    image: "/Health track/WhatsApp Image 2026-07-03 at 11.36.54 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Clinical Patient Telemetry & Appointment Hub",
+      overview: "Health Track is a clinician dashboard designed for real-time patient monitoring. It tracks heart rate, sleep quality metrics, and coordinates schedules.",
+      challenge: "Medical staff are overwhelmed with patient lists and scattered data files, delaying reviews of critical health telemetry.",
+      solution: "Designed a clean, multi-column dashboard using React, featuring patient health indicators, scheduling, and EHR data sync logs.",
+      duration: "4 Months (Jul — Nov 2025)",
+      deliverables: ["Patient Telemetry Portal", "Recharts Health Graphs", "Appointment Scheduler Grid", "Secure EHR Sync Connector"],
+      results: [],
+      colors: [
+        { name: "Bridge Green", hex: "#10B981", usage: "Stable health tags and positive trend outlines" },
+        { name: "Alert Orange", hex: "#F59E0B", usage: "Medium risk indicators and active reminders" },
+        { name: "Midnight Blue", hex: "#0F172A", usage: "Clinical panel frame and text layouts" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold headings emphasize patients metrics, supported by clean geometric scales for medical notes."
+      },
+      screenshots: [
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.36.54 PM.jpeg", caption: "Health Track Clinical Dashboard and Patient Telemetry Overview Mockup" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.04 PM.jpeg", caption: "Clinician schedule calendar and appointments grid" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.11 PM.jpeg", caption: "Detailed patient health profile telemetry data" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.20 PM.jpeg", caption: "Vitals log charts showing heart rates history" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.30 PM.jpeg", caption: "Medication list tracker and alerts settings" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.39 PM.jpeg", caption: "Clinician review notes and feedback panel" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.49 PM.jpeg", caption: "Lab test files report list and download" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.37.59 PM.jpeg", caption: "Emergency alert dashboard for urgent vitals" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.38.13 PM.jpeg", caption: "Patient message queue and requests timeline" },
+        { url: "/Health track/WhatsApp Image 2026-07-03 at 11.38.21 PM.jpeg", caption: "EHR secure database synchronization console" }
+      ]
+    }
+  },
+  {
+    id: "smarthome-controller",
+    title: "Smart Home Hub",
+    category: "Web applications",
+    description: "Advanced web interface dashboard for home automation telemetry, configuring camera nodes, and managing live thermostat levels.",
+    tags: ["React", "Vite", "WebSocket APIs", "IoT Telemetry"],
+    image: "/Smart home/WhatsApp Image 2026-07-03 at 11.55.04 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Home Automation Telemetry & IoT Control Hub",
+      overview: "Smart Home Hub is a dashboard portal built to manage smart appliances, track home energy efficiency metrics, and review live security feeds.",
+      challenge: "IoT apps are often slow to respond, causing lag in camera streams and thermostat updates.",
+      solution: "Developed a responsive dashboard client using WebSockets for real-time telemetry updates and optimized camera stream buffers.",
+      duration: "5 Months (Jun — Oct 2025)",
+      deliverables: ["IoT Operations Dashboard", "Thermostat Control Slider", "Camera Feeds Buffer Panel", "Energy Analytics Report Suite"],
+      results: [],
+      colors: [
+        { name: "Active Teal", hex: "#14B8A6", usage: "Power status overlays and active node tags" },
+        { name: "Accent Red", hex: "#E2261C", usage: "Heating settings, fire alerts, and active recorders" },
+        { name: "Soft Charcoal", hex: "#17120F", usage: "Main dashboard layout background" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "High-contrast sans headings deliver a clean smart home control feel, with geometic text details."
+      },
+      screenshots: [
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.55.04 PM.jpeg", caption: "Smart Home Central Controller and Energy Telemetry Overview Mockup" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.55.50 PM.jpeg", caption: "Living room thermostat and light settings" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.01 PM.jpeg", caption: "Kitchen appliances control dashboard" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.12 PM.jpeg", caption: "Smart security camera live feed panel" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.22 PM.jpeg", caption: "Device telemetry connections status list" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.32 PM.jpeg", caption: "Automations timer rules configuration page" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.41 PM.jpeg", caption: "Water heater status monitor graphs" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.56.53 PM.jpeg", caption: "Energy saving score analytics console" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.57.13 PM.jpeg", caption: "Smart locks status and access logs sheet" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.57.22 PM.jpeg", caption: "Entertainment devices voice control maps" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.57.30 PM.jpeg", caption: "General device settings and alerts filters" },
+        { url: "/Smart home/WhatsApp Image 2026-07-03 at 11.57.44 PM.jpeg", caption: "System health check logs and database backup console" }
+      ]
+    }
+  },
+  {
+    id: "project-alpha-portal",
+    title: "Project Alpha Control Panel",
+    category: "Web applications",
+    description: "High-fidelity software dashboard built for blockchain system operations, node analytics, and real-time transaction speeds.",
+    tags: ["React", "TailwindCSS", "Node.js", "System Analytics"],
+    image: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.15 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Blockchain Telemetry & Node Operations Control Panel",
+      overview: "Project Alpha is an enterprise control panel designed to monitor blockchain node metrics, transaction block pipelines, and network loads.",
+      challenge: "Blockchain operators have poor dashboard visibility on network lag and transaction pipeline blocks, leading to slow resolutions.",
+      solution: "Built a customized dashboard with React and WebSockets, delivering real-time telemetry grids, system speedometers, and block pipelines.",
+      duration: "4 Months (Jan — Apr 2026)",
+      deliverables: ["Node Operations Dashboard", "Block Pipeline Monitor Component", "Network Spikes Telemetry Chart", "Operator Access control Panel"],
+      results: [],
+      colors: [
+        { name: "Crypto Gold", hex: "#F59E0B", usage: "Block indicators, validation stars, and positive trends" },
+        { name: "Active Indigo", hex: "#4B2EFF", usage: "Main buttons, active routes, and focus lines" },
+        { name: "Midnight Charcoal", hex: "#0E0C0B", usage: "Core terminal background canvas frame" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold sans headings reflect cutting-edge aerospace venture feel, supported by geometric logs."
+      },
+      screenshots: [
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.15 PM.jpeg", caption: "Project Alpha System Telemetry and Node Operations Control Panel Mockup" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.25 PM.jpeg", caption: "Blockchain blocks validator timeline logs" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.30 PM.jpeg", caption: "Transaction latency statistics graphs" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.39 PM.jpeg", caption: "Security nodes keys overview board" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.49 PM.jpeg", caption: "User accounts wallet balance listings" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.52.58 PM.jpeg", caption: "Network load alerts configuration screen" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.53.39 PM.jpeg", caption: "Custom block gas prices estimator panel" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.53.49 PM.jpeg", caption: "API access token manager guidelines" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.54.11 PM.jpeg", caption: "General logs summary download dashboard" },
+        { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.54.38 PM.jpeg", caption: "Database synchronization console and logs export" }
       ]
     }
   }

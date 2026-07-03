@@ -47,6 +47,13 @@ export default function Work({ onSelectProject }) {
   const filteredWork = work.filter((item) => item.category === activeCategory);
 
   const handleCategorySelect = (categoryName) => {
+    if (categoryName === "Social Media Posts") {
+      const smmProject = work.find((item) => item.id === "smm-brand-campaigns");
+      if (smmProject && onSelectProject) {
+        onSelectProject({ ...smmProject, defaultTab: "gallery" });
+        return;
+      }
+    }
     setActiveCategory(categoryName);
     setView("projects");
     document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
@@ -196,7 +203,31 @@ export default function Work({ onSelectProject }) {
                         aria-label={`View project ${item.title}`}
                       >
                         <div className="work-image-wrapper">
-                          <img src={item.image} alt={item.title} className="work-image" />
+                          {item.category === "Mobile apps" ? (
+                            <div className="mockup-device-mobile">
+                              <div className="mockup-phone-frame">
+                                <div className="mockup-screen">
+                                  <img src={item.image} alt={item.title} className="work-image" />
+                                </div>
+                                <div className="mockup-island"></div>
+                              </div>
+                            </div>
+                          ) : item.category === "Web applications" || item.category === "Website" ? (
+                            <div className="mockup-device-laptop">
+                              <div className="mockup-laptop-frame">
+                                <div className="mockup-browser-header">
+                                  <span className="dot dot-red"></span>
+                                  <span className="dot dot-yellow"></span>
+                                  <span className="dot dot-green"></span>
+                                </div>
+                                <div className="mockup-screen">
+                                  <img src={item.image} alt={item.title} className="work-image" />
+                                </div>
+                              </div>
+                            </div>
+                          ) : (
+                            <img src={item.image} alt={item.title} className="work-image" />
+                          )}
                           <div className="work-hover-overlay">
                             <span className="btn-view-project">
                               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="arrow-icon">

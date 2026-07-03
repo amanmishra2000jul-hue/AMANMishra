@@ -732,3 +732,168 @@
   }
 }
 
+/* Behance-style stacked vertical gallery view */
+.cs-behance-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.cs-behance-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-behance-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--line-soft);
+  transition: border-color 0.3s ease;
+}
+
+.cs-behance-img:hover {
+  border-color: var(--red);
+}
+
+.cs-behance-flow.mobile-layout .cs-behance-img {
+  max-width: 420px; /* Capped for portrait screens on desktop */
+}
+
+.cs-behance-flow.web-layout .cs-behance-img {
+  max-width: 100%; /* Spans full container width */
+}
+
+.cs-behance-caption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--ink-dim);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Adjustments for mobile viewports */
+@media (max-width: 640px) {
+  .cs-behance-flow.mobile-layout .cs-behance-img {
+    max-width: 100%; /* Full screen on mobile */
+  }
+}
+
+/* Large Case Study Device Mockups */
+.cs-mockup-device-mobile {
+  width: 250px;
+  height: 500px;
+  background: #000;
+  border-radius: 36px;
+  border: 7px solid #282422;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.6), inset 0 2px 4px rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+  margin: 32px auto;
+  display: flex;
+}
+
+.cs-mockup-phone-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cs-mockup-phone-frame .cs-mockup-screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cs-mockup-phone-frame .cs-mockup-screen img.cs-showcase-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cs-mockup-island {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 14px;
+  background: #000;
+  border-radius: 8px;
+  z-index: 5;
+}
+
+/* Large Case Study Laptop/Browser Mockup */
+.cs-mockup-device-laptop {
+  width: 100%;
+  max-width: 900px;
+  background: #17120f;
+  border-radius: 12px;
+  border: 1px solid var(--line-soft);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 32px auto;
+}
+
+.cs-mockup-laptop-frame {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-mockup-browser-header {
+  height: 26px;
+  background: #0f0b09;
+  border-bottom: 1px solid var(--line-soft);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cs-mockup-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.cs-mockup-dot.dot-red { background: #ff5f56; }
+.cs-mockup-dot.dot-yellow { background: #ffbd2e; }
+.cs-mockup-dot.dot-green { background: #27c93f; }
+
+.cs-mockup-screen {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cs-mockup-screen img.cs-showcase-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .cs-mockup-device-mobile {
+    width: 190px;
+    height: 380px;
+    border-radius: 28px;
+    border-width: 5px;
+  }
+  .cs-mockup-island {
+    width: 45px;
+    height: 10px;
+    top: 8px;
+  }
+}
+
+

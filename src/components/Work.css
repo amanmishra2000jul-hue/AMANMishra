@@ -350,3 +350,142 @@
 @media (max-width: 520px) {
   .work-empty-grid { grid-template-columns: 1fr; }
 }
+
+/* Dynamic CSS Device Mockups inside Work Cards */
+.work-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #2a1610 0%, #0e0c0b 100%);
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+/* Phone Mockup */
+.mockup-device-mobile {
+  width: 130px;
+  height: 260px;
+  background: #000;
+  border-radius: 20px;
+  border: 4px solid #282422;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.15);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+}
+
+.work-card:hover .mockup-device-mobile {
+  transform: translateY(-4px) scale(1.05);
+}
+
+.mockup-phone-frame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mockup-phone-frame .mockup-screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mockup-phone-frame .mockup-screen img.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none !important; /* disable hover scale for mobile screen to avoid cropping */
+}
+
+.mockup-island {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 8px;
+  background: #000;
+  border-radius: 6px;
+  z-index: 5;
+}
+
+/* Laptop/Browser Mockup */
+.mockup-device-laptop {
+  width: 100%;
+  height: 100%;
+  padding: 16px 20px 0 20px; /* give it nice margins inside the card */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* sits at the bottom like a laptop */
+}
+
+.mockup-laptop-frame {
+  width: 100%;
+  height: 100%;
+  background: #17120f;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid var(--line-soft);
+  border-bottom: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-card:hover .mockup-laptop-frame {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.mockup-browser-header {
+  height: 18px;
+  background: #0f0b09;
+  border-bottom: 1px solid var(--line-soft);
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.mockup-browser-header .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.mockup-browser-header .dot-red { background: #ff5f56; }
+.mockup-browser-header .dot-yellow { background: #ffbd2e; }
+.mockup-browser-header .dot-green { background: #27c93f; }
+
+.mockup-laptop-frame .mockup-screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mockup-laptop-frame .mockup-screen img.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none !important; /* disable hover scale */
+}
+
+/* Raw Cover Image (for non-mocked categories) */
+img.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-card:hover img.work-image {
+  transform: scale(1.05);
+}
+
