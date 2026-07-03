@@ -46,13 +46,6 @@ export default function Hero() {
             <br />
             people actually <span className="outline">want.</span>
           </motion.h1>
-
-          <div className="hero-portrait" aria-hidden="true">
-            <div className="hero-portrait-frame">
-              <span className="hero-portrait-initials display">AM</span>
-            </div>
-            <span className="hero-portrait-badge">{profile.name}</span>
-          </div>
         </div>
 
         <motion.div
