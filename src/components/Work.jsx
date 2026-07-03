@@ -28,21 +28,15 @@ const categoryDetails = [
   },
   {
     id: "social",
-    name: "Social media Management",
+    name: "Social Media Posts",
     desc: "Professional slide templates, infographic campaign visuals, templates, and tech insights narratives.",
-    countTag: "Social media Management"
+    countTag: "Social Media Posts"
   },
   {
-    id: "branding",
-    name: "Branding",
-    desc: "Geometric logo systems, digital brand books, vector assets, and bespoke typography guidelines.",
-    countTag: "Branding"
-  },
-  {
-    id: "marketing",
-    name: "Marketing campaigns",
-    desc: "Targeted lead generation setups, landing page systems, Google ads creatives, and analytics performance boards.",
-    countTag: "Marketing campaigns"
+    id: "branding-marketing",
+    name: "Branding & Marketing",
+    desc: "Bespoke brand identity systems, vector logos, Google Ads templates, and performance-driven marketing campaigns.",
+    countTag: "Branding & Marketing"
   }
 ];
 

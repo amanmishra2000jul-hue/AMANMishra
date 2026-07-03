@@ -87,6 +87,22 @@ export default function CaseStudy({ project, onBack }) {
               <span className="eyebrow">{project.category} Case Study</span>
               <h1 className="cs-title display">{project.title}</h1>
               <p className="cs-subtitle">{cs.subtitle}</p>
+              {project.link && project.link !== "#" && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn cs-visit-btn"
+                  style={{ marginTop: "24px", display: "inline-flex", width: "fit-content" }}
+                >
+                  <span className="icon-circle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H8M17 7v9" />
+                    </svg>
+                  </span>
+                  Visit Live Site
+                </a>
+              )}
             </motion.div>
 
             <motion.div
@@ -102,7 +118,7 @@ export default function CaseStudy({ project, onBack }) {
               </div>
               <div className="cs-meta-item">
                 <span className="dim cs-meta-label">Organization</span>
-                <span className="cs-meta-val">KPMG</span>
+                <span className="cs-meta-val">{project.caseStudy.org || "KPMG"}</span>
               </div>
               <div className="cs-meta-item">
                 <span className="dim cs-meta-label">Duration</span>
