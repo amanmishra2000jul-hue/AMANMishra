@@ -79,6 +79,29 @@
 .navbar-menu-btn.is-open .navbar-menu-lines i:first-child{ transform: translateY(3px) rotate(45deg); }
 .navbar-menu-btn.is-open .navbar-menu-lines i:last-child{ transform: translateY(-3px) rotate(-45deg); }
 
+.navbar-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.navbar-cv-btn:hover {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
 @media (max-width: 780px){
   .navbar-clock{ display:none; }
   .navbar-contact{ display:none; }

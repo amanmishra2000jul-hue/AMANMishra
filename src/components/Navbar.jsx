@@ -43,6 +43,13 @@ export default function Navbar({ menuOpen, setMenuOpen, onNavigate }) {
             <span className="dim">Get in touch</span>
             <span>{profile.email}</span>
           </a>
+          <a 
+            href="/Aman_Mishra_Resume.pdf" 
+            download="Aman_Mishra_Resume.pdf" 
+            className="navbar-cv-btn"
+          >
+            CV ✦
+          </a>
           <button
             className={`navbar-menu-btn ${menuOpen ? "is-open" : ""}`}
             onClick={() => setMenuOpen((v) => !v)}
