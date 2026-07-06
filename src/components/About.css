@@ -3,6 +3,7 @@
   display:grid;
   grid-template-columns: 1.3fr 1fr;
   gap: clamp(30px, 6vw, 90px);
+  align-items: start;
 }
 .about-heading{
   font-size: clamp(28px, 4vw, 46px);
@@ -86,8 +87,9 @@
 .about-credentials-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.3fr 1fr;
   gap: clamp(30px, 6vw, 90px);
+  align-items: start;
 }
 
 .about-education {

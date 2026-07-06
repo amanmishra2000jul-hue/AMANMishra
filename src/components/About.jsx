@@ -34,15 +34,6 @@ export default function About() {
             {about.paragraphs.map((p, i) => (
               <p key={i} className="about-paragraph">{p}</p>
             ))}
-
-            <div className="about-stats">
-              {about.stats.map((s) => (
-                <div key={s.label} className="about-stat">
-                  <span className="display about-stat-value">{s.value}</span>
-                  <span className="dim about-stat-label">{s.label}</span>
-                </div>
-              ))}
-            </div>
           </motion.div>
 
           <motion.div
