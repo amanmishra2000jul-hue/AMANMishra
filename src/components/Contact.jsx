@@ -28,7 +28,7 @@ export default function Contact() {
           viewport={{ once: true, amount: 0.3 }}
           variants={fadeUp}
         >
-          Let’s create <br /> something worth <span className="outline">shipping.</span>
+          Let’s build <br /> something <span className="outline">iconic.</span>
         </motion.h2>
 
         <motion.div
