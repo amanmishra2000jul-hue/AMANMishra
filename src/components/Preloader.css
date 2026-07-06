@@ -9,10 +9,24 @@
 }
 .preloader-mark{
   font-family: var(--f-display);
-  font-size: clamp(28px, 6vw, 44px);
+  font-size: clamp(32px, 7.5vw, 64px); /* Slightly larger for premium readability */
   color: var(--ink);
   text-transform: uppercase;
   letter-spacing: .02em;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.preloader-mark-wrapper {
+  overflow: hidden;
+  height: auto;
+}
+.expanded-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  text-align: left;
 }
 .preloader-bar{
   position:absolute;

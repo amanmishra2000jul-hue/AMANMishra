@@ -82,3 +82,197 @@
 @media (max-width: 900px){
   .about-grid{ grid-template-columns: 1fr; }
 }
+
+.about-credentials-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(30px, 6vw, 90px);
+}
+
+.about-education {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(24px, 3vw, 34px);
+  background: rgba(255, 255, 255, 0.02);
+  height: fit-content;
+}
+
+.about-awards {
+  border: 1px solid rgba(226, 38, 28, 0.24);
+  border-radius: 18px;
+  padding: clamp(24px, 3vw, 34px);
+  background: linear-gradient(135deg, rgba(226, 38, 28, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+  box-shadow: 0 0 24px rgba(226, 38, 28, 0.03);
+  height: fit-content;
+}
+
+.education-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.education-item:first-of-type {
+  padding-top: 0;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+  gap: 10px;
+}
+.education-header h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+.education-year {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.education-institution {
+  font-size: 13.5px;
+  color: var(--ink-dim);
+  margin: 0;
+}
+.education-score {
+  font-size: 12px;
+  margin: 4px 0 0 0;
+}
+
+/* Awards & Certs styling */
+.awards-section-title {
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 14px;
+  margin-top: 24px;
+  display: block;
+}
+.awards-section-title:first-of-type {
+  margin-top: 0;
+}
+
+.award-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+.award-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.award-item:first-of-type {
+  padding-top: 0;
+}
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4px;
+  gap: 10px;
+}
+.award-header h5 {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+.award-year {
+  font-size: 11px;
+  white-space: nowrap;
+}
+.award-desc {
+  font-size: 12px;
+  color: var(--ink-dim);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.certification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 13.5px;
+  gap: 10px;
+}
+.certification-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.certification-item:first-of-type {
+  padding-top: 0;
+}
+.certification-item .dim {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.about-tools {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(24px, 3vw, 34px);
+  background: rgba(255, 255, 255, 0.02);
+  height: fit-content;
+}
+
+.tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tool-category {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.tool-category:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tool-cat-name {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-tag {
+  font-size: 12.5px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  color: var(--ink);
+  transition: all 0.2s ease;
+}
+.tool-tag:hover {
+  background: rgba(226, 38, 28, 0.1);
+  border-color: rgba(226, 38, 28, 0.3);
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .about-credentials-grid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 30px;
+  }
+}

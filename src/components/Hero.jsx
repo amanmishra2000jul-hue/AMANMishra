@@ -36,15 +36,23 @@ export default function Hero() {
         </div>
 
         <div className="hero-headline-row">
+          <motion.span
+            className="hero-name-badge"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+          >
+            Aman Mishra ✦
+          </motion.span>
           <motion.h1
             className="hero-headline display"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           >
-            I design products
+            I build products
             <br />
-            people actually <span className="outline">want.</span>
+            from concept to <span className="outline">code.</span>
           </motion.h1>
         </div>
 

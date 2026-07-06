@@ -7,7 +7,7 @@ export const profile = {
   name: "Aman Mishra",
   firstName: "Aman",
   lastName: "Mishra",
-  role: "Software Developer",
+  role: "Product Designer & Developer",
   location: "Bangalore, India",
   fullLocation: "Mahadevapura, Bangalore 560048",
   email: "amanmishra2000jul@gmail.com",
@@ -23,51 +23,127 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Multi-disciplinary designer working across the full product loop — UI/UX research, wireframing and interactive prototyping, client requirement gathering and business analysis, through to development coordination and go-to-market marketing execution.",
-    "Comfortable owning a design from first client conversation to final delivery, and equally at home with content, brand voice, SEO/analytics and cross-functional coordination. Known for translating ambiguous requirements into clear, buildable designs — and for onboarding new teammates quickly.",
+    "Over my career, I have built multi-disciplinary expertise across UI/UX design, branding, software development, enterprise applications, Generative AI, embedded systems, and SaaS platforms. I specialize in bridging the gap between design and high-performance development.",
+    "Comfortable owning product features from first client conversation to final delivery, I excel at translating ambiguous business requirements into clean, user-centric, and buildable systems. My journey reflects a deep commitment to continuous learning, technical excellence, and collaborative teamwork."
   ],
   stats: [
-    { value: "2+", label: "Years of experience" },
-    { value: "3", label: "Organisations" },
-    { value: "15%", label: "Model accuracy improved" },
+    { value: "3+", label: "Years of experience" },
+    { value: "4", label: "Organisations" },
+    { value: "300+", label: "Projects" },
   ],
 };
 
 export const skills = [
-  { name: "UI/UX Design", detail: "Prototyping · Wireframing", level: 4 },
-  { name: "Product & Business Analysis", detail: "Requirements · Coordination", level: 4 },
-  { name: "Digital Marketing", detail: "SEO · Analytics · Social", level: 3 },
-  { name: "Content & Brand", detail: "Copy · Brand Systems", level: 3 },
-  { name: "Technical", detail: "Python · Java · C#.NET", level: 4 },
+  { name: "UI/UX Design & Research", detail: "Wireframes · Design Systems", level: 4 },
+  { name: "Frontend Prototyping", detail: "HTML · CSS · Javascript · React", level: 4 },
+  { name: "Product & Business Analysis", detail: "Requirements · Client Discovery", level: 4 },
+  { name: "Digital Marketing", detail: "SEO · Analytics · Social Ads", level: 3 },
+  { name: "Technical Engineering", detail: "Python · Java · WPF / C#.NET", level: 4 },
+];
+
+export const tools = [
+  { category: "Design", items: ["Figma", "Adobe Suite", "Photoshop", "Illustrator"] },
+  { category: "Prototyping", items: ["Figma Prototyping", "HTML/CSS/JS", "React/Vite"] },
+  { category: "Video & Media", items: ["Premiere Pro", "DaVinci Resolve", "CapCut", "Camera/Audio Gear"] },
+  { category: "Coordination", items: ["Notion", "Agile/Jira", "Git/GitHub", "Slack"] }
+];
+
+export const education = [
+  {
+    degree: "Bachelor of Engineering (B.E.)",
+    institution: "East Point College of Engineering and Technology",
+    year: "Graduated May 2023"
+  },
+  {
+    degree: "Pre-University Course (PUC)",
+    institution: "SEA College",
+    year: "Completed 2020"
+  },
+  {
+    degree: "Secondary School (SSLC)",
+    institution: "Shree Krishna High School",
+    year: "Completed 2018"
+  }
+];
+
+export const awards = [
+  {
+    title: "Quality Champion Award",
+    org: "KPMG",
+    year: "2026",
+    desc: "Recognized for consistently delivering high-quality work and maintaining excellence in project execution."
+  },
+  {
+    title: "Super Team Award",
+    org: "KPMG",
+    year: "2024",
+    desc: "Awarded for outstanding teamwork, collaboration, and contribution to successful project delivery."
+  },
+  {
+    title: "Best Project Award (National Event)",
+    org: "VIBRATIONS 2023",
+    year: "2023",
+    desc: "Recognized for developing and presenting the best project during the VIBRATIONS 2023 technical event."
+  }
+];
+
+export const certifications = [
+  {
+    name: "RPA Diploma Certification",
+    org: "UiPath",
+    year: "2022"
+  },
+  {
+    name: "Python Certification",
+    org: "Coursera",
+    year: "2022"
+  },
+  {
+    name: "Generative AI Certification",
+    org: "EMCOM Serv Pvt. Ltd.",
+    year: "2023"
+  }
 ];
 
 export const experience = [
   {
-    role: "Product Designer & Client Solutions Lead",
+    role: "Software Developer",
     org: "KPMG",
     date: "Jul 2024 — Mar 2026",
     points: [
-      "Led client discovery, translating business needs into user flows & specs.",
-      "Designed UI/UX mockups and prototypes through to sign-off.",
-      "Coordinated development through to delivery; trained fresher hires.",
-      "Built a GPT-3 chatbot; improved image-gen accuracy by 15%.",
+      "Developed and designed enterprise software applications including Clara, Digital Gateway, Workbench, Risk Hub, Sofy, and Dash.",
+      "Worked closely with cross-functional teams in an Agile environment to solve complex technical and business challenges.",
+      "Delivered high-quality, scalable, and maintainable software solutions, training and mentoring incoming interns.",
+      "Recognized with the Quality Champion Award (2026) and Super Team Award (2024) for project excellence and collaboration."
     ],
   },
   {
     role: "Software Developer",
-    org: "Emcom Serv Pvt Ltd",
-    date: "Jun 2023 — Jun 2024",
+    org: "Fortitude Mobility Private Limited",
+    date: "Feb 2024 — Jun 2024",
     points: [
-      "Built desktop apps in WPF/XAML with user-friendly interfaces.",
-      "Delivered scalable Java microservices — “Super Team” award.",
+      "Designed, developed, and maintained web and SaaS-based applications in the electric mobility domain.",
+      "Contributed to EV Charging Management Systems, improving application performance and overall user experience."
     ],
   },
   {
-    role: "Intern",
-    org: "Comsoft Technologies",
-    date: "Aug — Oct 2022",
-    points: [],
+    role: "Software Developer Intern",
+    org: "EMCOM Services Private Limited",
+    date: "Nov 2023 — Jan 2024",
+    points: [
+      "Assisted in designing and developing AI-powered features, smart home solutions, and UI/UX layouts.",
+      "Worked on embedded system implementations, collaborating with senior developers on innovative product solutions."
+    ],
   },
+  {
+    role: "Designer & Branding Freelancer",
+    org: "DaVince Production",
+    date: "Jun 2023 — Oct 2023",
+    points: [
+      "Designed branding identity guides, marketing collateral, and creative assets for diverse client projects.",
+      "Collaborated with cross-functional teams to deliver visually engaging solutions, artist management, and event execution."
+    ],
+  }
 ];
 
 // Selected Case Studies of Web Development and Design
@@ -933,6 +1009,183 @@ export const work = [
         { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.53.49 PM.jpeg", caption: "API access token manager guidelines" },
         { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.54.11 PM.jpeg", caption: "General logs summary download dashboard" },
         { url: "/project alpha/WhatsApp Image 2026-07-03 at 10.54.38 PM.jpeg", caption: "Database synchronization console and logs export" }
+      ]
+    }
+  },
+  {
+    id: "architects-studio",
+    title: "Architects Design Studio",
+    category: "Website",
+    description: "Bespoke digital portfolio and presentation suite built for a premium architectural design studio, showcasing high-resolution project grids and minimalist design principles.",
+    tags: ["React", "Vite", "Minimalist UI", "Image Galleries"],
+    image: "/Architects/WhatsApp Image 2026-07-06 at 11.17.23 AM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Minimalist Portfolio for Premium Architecture & Spaces",
+      overview: "Architects Design Studio is a bespoke digital portfolio designed for a premier architectural firm. Emphasizing clean layouts, expansive typography, and high-fidelity photography, it provides a seamless visual narrative of spatial designs, residential structures, and urban planning concepts.",
+      challenge: "Architectural works rely heavily on visual impact. Traditional website templates clutter project images with heavy navigation bars, slow load speeds, and rigid grids that don't scale well to larger screens.",
+      solution: "Designed and built a minimalist, fluid portfolio site. It features custom fullscreen masonry galleries, subtle hover micro-animations, and light-to-dark theme transitions, giving the imagery maximum screen space while maintaining high performance.",
+      duration: "2 Months",
+      deliverables: ["Fullscreen Project Showcase", "Responsive Masonry Grid Layout", "Interactive Project Filters", "Dark/Light Editorial Theme"],
+      results: [
+        { label: "Engagement Duration", value: "+45%" },
+        { label: "Image Load Times", value: "<1.2s" },
+        { label: "Mobile Scroll Fluidity", value: "60fps" }
+      ],
+      colors: [
+        { name: "Midnight Onyx", hex: "#111111", usage: "Primary canvas backgrounds" },
+        { name: "Raw Concrete", hex: "#8A8A8A", usage: "Secondary text and subtle dividers" },
+        { name: "Stark White", hex: "#FFFFFF", usage: "Primary display headings" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold display type contrasted with technical geometric body text creates a highly structured, architectural feel."
+      },
+      screenshots: [
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.17.23 AM.jpeg", caption: "Studio landing page header" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.17.30 AM.jpeg", caption: "Studio overview and philosophy" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.17.37 AM.jpeg", caption: "Selected project details page" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.17.44 AM.jpeg", caption: "Spatial layout blueprints showcase" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.17.52 AM.jpeg", caption: "Residential projects gallery grid" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.18.00 AM.jpeg", caption: "Team profile and architects bio page" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.18.08 AM.jpeg", caption: "Contact page and studio coordinates" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.18.20 AM.jpeg", caption: "Studio location mapping layout" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.18.30 AM.jpeg", caption: "Sustainable design achievements timeline" },
+        { url: "/Architects/WhatsApp Image 2026-07-06 at 11.19.07 AM.jpeg", caption: "Client feedback and reviews grid" }
+      ]
+    }
+  },
+  {
+    id: "aurum-showcase",
+    title: "Aurum Boutique",
+    category: "Website",
+    description: "Luxury boutique brand experience and digital showcase built to present premium gold, diamond, and precious metal craftsmanship through elegant layouts.",
+    tags: ["React", "Luxury Branding", "TailwindCSS", "Product Showcase"],
+    image: "/Aurum/WhatsApp Image 2026-07-06 at 11.26.32 AM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Elegant Digital Showcase for Premium Craftsmanship",
+      overview: "Aurum is a luxury boutique digital experience showcasing bespoke jewelry collections, high-end gold craftsmanship, and heritage design stories. The site uses warm, premium palettes and slow, smooth transitions to match the prestige of the physical boutique.",
+      challenge: "Standard e-commerce platforms feel transactional and cheap, lacking the storytelling, visual space, and custom styling required to sell five-figure custom luxury items.",
+      solution: "Created a brand-first immersive showcase featuring high-res imagery, interactive details zoom, custom curation collections, and a private booking portal for design consultations.",
+      duration: "3 Months",
+      deliverables: ["Interactive Heritage Storyline", "Exclusive Collections Grid", "High-Res Details Zoom Showcase", "Private Booking Console"],
+      results: [
+        { label: "Session Duration", value: "+80%" },
+        { label: "Private Bookings", value: "+35%" },
+        { label: "Brand Recall", value: "98%" }
+      ],
+      colors: [
+        { name: "Royal Onyx", hex: "#0D0D0E", usage: "Primary background space" },
+        { name: "Aurum Gold", hex: "#D4AF37", usage: "Callouts, active status indicators, and luxury borders" },
+        { name: "Alabaster Silk", hex: "#F5F5F7", usage: "High-contrast headings and body copy" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "An elegant contrast of bold display typography and crisp geometric details creates a luxury digital atmosphere."
+      },
+      screenshots: [
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.26.32 AM.jpeg", caption: "Aurum welcome landing banner" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.26.39 AM.jpeg", caption: "Heritage craftsmanship timeline" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.26.47 AM.jpeg", caption: "Diamond collections showcase" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.26.54 AM.jpeg", caption: "Luxury bracelets grid" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.01 AM.jpeg", caption: "Private catalog menu details" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.08 AM.jpeg", caption: "Gold necklaces collection" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.15 AM.jpeg", caption: "Bespoke custom rings designer" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.23 AM.jpeg", caption: "Private consultation scheduling" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.32 AM.jpeg", caption: "Brand boutique locations" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.39 AM.jpeg", caption: "Premium gift box options" },
+        { url: "/Aurum/WhatsApp Image 2026-07-06 at 11.27.53 AM.jpeg", caption: "Customer reviews and loyalty portal" }
+      ]
+    }
+  },
+  {
+    id: "horologue-atelier",
+    title: "Horologue Watch Atelier",
+    category: "Website",
+    description: "Interactive watch atelier platform celebrating mechanical horology, fine watchmaking heritage, and luxury chronometers through detailed technical specs.",
+    tags: ["React", "Vite", "Technical Specifications", "Visual Storytelling"],
+    image: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.04 AM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Immersive Showcase for Mechanical Horology & Watchmaking",
+      overview: "Horologue is an interactive web experience celebrating mechanical timepieces and the art of fine watchmaking. It presents detailed technical specifications, movement architecture blueprints, and limited-edition collections.",
+      challenge: "Conveying the micro-engineering precision of mechanical movements on a digital screen is difficult without cluttering the UI with complex technical diagrams.",
+      solution: "Designed an editorial showcase using high-resolution macro photography, interactive movement blueprints, and clean specs grids that highlight mechanical complexity.",
+      duration: "3 Months",
+      deliverables: ["Interactive Movement Exploded View", "Technical Specs Matrix", "Limited Editions Showcase", "Service & Maintenance Hub"],
+      results: [
+        { label: "Spec Table Read Rate", value: "+50%" },
+        { label: "Catalog Downloads", value: "+60%" },
+        { label: "Inquiry Conversions", value: "+24%" }
+      ],
+      colors: [
+        { name: "Deep Charcoal", hex: "#1A1A1A", usage: "Main editorial background" },
+        { name: "Steel Grey", hex: "#7F8C8D", usage: "Technical specs, line borders, and secondary copy" },
+        { name: "Classic Silver", hex: "#E5E8E8", usage: "Main headings and titles" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Precision geometric font sizes mirror the meticulous alignment of mechanical watch gears."
+      },
+      screenshots: [
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.04 AM.jpeg", caption: "Horologue home landing" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.18 AM.jpeg", caption: "Watch collection highlight" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.22 AM.jpeg", caption: "Movement architecture view" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.36 AM.jpeg", caption: "Chronograph series showcase" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.50.40 AM.jpeg", caption: "Limited-edition technical blueprint" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.51.21 AM.jpeg", caption: "Watchmaker tools and process" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.51.26 AM.jpeg", caption: "Dial craftsmanship details" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.51.49 AM.jpeg", caption: "Bespoke strap selectors" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.52.11 AM.jpeg", caption: "Vintage historical timeline" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.52.19 AM.jpeg", caption: "Boutique concierge request" },
+        { url: "/Horologue/WhatsApp Image 2026-07-06 at 11.52.48 AM.jpeg", caption: "Technical specifications index" }
+      ]
+    }
+  },
+  {
+    id: "serene-haven-retreat",
+    title: "Serene Haven Retreat",
+    category: "Website",
+    description: "Elegant wellness retreat website designed to promote relaxation and mindfulness through calming imagery, custom package planners, and spa amenities guides.",
+    tags: ["React", "Calming UX", "Wellness Branding", "Package Planner"],
+    image: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.15 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Calming Brand & Portal for Premium Spa & Retreats",
+      overview: "Serene Haven is an elegant digital experience designed for a luxury eco-resort and spa. The platform uses a soothing, minimalist layout with breathing room and soft hues to instill immediate calm, while detailing custom packages and healing wellness plans.",
+      challenge: "Most booking platforms are chaotic and text-heavy, creating user fatigue and friction that goes against a wellness brand's calming identity.",
+      solution: "Designed a clutter-free, immersive website featuring gentle scrolling transitions, clean typography, large breathing layouts, and a custom wellness package planner.",
+      duration: "3 Months",
+      deliverables: ["Interactive Wellness Planner", "Spa Amenities Showcase", "Eco-Luxury Villa Gallery", "Mindfulness Resources Blog"],
+      results: [
+        { label: "Bounce Rate Reduced", value: "-30%" },
+        { label: "Wellness Package Bookings", value: "+40%" },
+        { label: "NPS Customer Satisfaction", value: "96%" }
+      ],
+      colors: [
+        { name: "Warm Charcoal", hex: "#2C2C2A", usage: "Main body text readability and dark container shapes" },
+        { name: "Serene Green", hex: "#A3B19B", usage: "Primary highlights, soothing badges, and active icons" },
+        { name: "Sand Beige", hex: "#FDFBF7", usage: "Light editorial sections and typography highlights" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Soft, clear sans-serif layouts with generous letter-spacing create a feeling of openness, calm, and spaciousness."
+      },
+      screenshots: [
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.15 PM.jpeg", caption: "Serene Haven landing header" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.22 PM.jpeg", caption: "Eco-luxury resort concept" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.28 PM.jpeg", caption: "Healing spa amenities" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.37 PM.jpeg", caption: "Mindfulness programs directory" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.10.57 PM.jpeg", caption: "Organic culinary overview" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.11.03 PM.jpeg", caption: "Luxury villa layouts" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.11.13 PM.jpeg", caption: "Yoga and meditation class calendar" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.11.25 PM.jpeg", caption: "Custom packages selection builder" },
+        { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.11.30 PM.jpeg", caption: "Booking verification page" }
       ]
     }
   }

@@ -25,7 +25,7 @@ export default function App() {
   const [activeProject, setActiveProject] = useState(null);
 
   useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1000);
+    const t = setTimeout(() => setLoading(false), 1700);
     return () => clearTimeout(t);
   }, []);
 
