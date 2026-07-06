@@ -83,6 +83,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   padding: 6px 14px;
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -95,11 +96,22 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
+.navbar-cv-icon {
+  width: 11px;
+  height: 11px;
+  stroke: currentColor;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .navbar-cv-btn:hover {
   background: var(--ink);
   color: var(--bg);
   border-color: var(--ink);
   transform: translateY(-1px);
+}
+
+.navbar-cv-btn:hover .navbar-cv-icon {
+  transform: translateY(1.5px);
 }
 
 @media (max-width: 780px){
