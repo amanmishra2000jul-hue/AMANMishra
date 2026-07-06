@@ -55,9 +55,9 @@ export default function App() {
         ) : (
           <>
             <Hero />
-            <Brands />
             <About />
             <Experience />
+            <Brands />
             <Work onSelectProject={setActiveProject} />
           </>
         )}

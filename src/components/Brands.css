@@ -56,17 +56,16 @@
   height: 32px;
 }
 
-.ticker-item svg {
+.ticker-item img {
   height: 100%;
-  max-width: 130px;
-  color: var(--ink);
-  fill: var(--ink);
+  max-width: 140px;
+  object-fit: contain;
   opacity: 0.35;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  filter: grayscale(1);
+  filter: brightness(0) invert(1);
 }
 
-.ticker-item:hover svg {
+.ticker-item:hover img {
   opacity: 0.95;
-  filter: grayscale(0);
+  filter: none;
 }
