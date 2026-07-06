@@ -29,11 +29,11 @@ export default function CaseStudy({ project, onBack }) {
   const tabs = [
     { id: "overview", label: "Overview" },
     { id: "gallery", label: "Gallery & Mockups" },
-    { id: "styleguide", label: "Colors & Typography" },
-    isCreativeCategory
-      ? { id: "strategy", label: "Creative Strategy" }
-      : { id: "architecture", label: "Tech Architecture" }
+    { id: "styleguide", label: "Colors & Typography" }
   ];
+  if (isCreativeCategory) {
+    tabs.push({ id: "strategy", label: "Creative Strategy" });
+  }
 
   // Clipboard copy handler for color swatches
   const handleCopyColor = (hex) => {
