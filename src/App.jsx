@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import CaseStudy from "./components/CaseStudy";
+import Brands from "./components/Brands";
 
 import "./components/Preloader.css";
 import "./components/Navbar.css";
@@ -18,6 +19,7 @@ import "./components/Experience.css";
 import "./components/Work.css";
 import "./components/Contact.css";
 import "./components/CaseStudy.css";
+import "./components/Brands.css";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -53,6 +55,7 @@ export default function App() {
         ) : (
           <>
             <Hero />
+            <Brands />
             <About />
             <Experience />
             <Work onSelectProject={setActiveProject} />
