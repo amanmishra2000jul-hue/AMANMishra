@@ -104,34 +104,7 @@ export default function CaseStudy({ project, onBack }) {
               )}
             </motion.div>
 
-            <motion.div
-              className="cs-meta-grid"
-              initial="hidden"
-              animate="visible"
-              variants={fadeUp}
-              transition={{ delay: 0.15 }}
-            >
-              <div className="cs-meta-item">
-                <span className="dim cs-meta-label">Role</span>
-                <span className="cs-meta-val">{project.caseStudy.role || "UI/UX Designer & Developer"}</span>
-              </div>
-              <div className="cs-meta-item">
-                <span className="dim cs-meta-label">Organization</span>
-                <span className="cs-meta-val">{project.caseStudy.org || "KPMG"}</span>
-              </div>
-              <div className="cs-meta-item">
-                <span className="dim cs-meta-label">Duration</span>
-                <span className="cs-meta-val">{cs.duration}</span>
-              </div>
-              <div className="cs-meta-item">
-                <span className="dim cs-meta-label">Tags</span>
-                <div className="cs-meta-tags">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="cs-tag">{tag}</span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+
           </div>
         </div>
       </section>
