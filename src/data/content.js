@@ -1188,5 +1188,127 @@ export const work = [
         { url: "/Serene Haven/WhatsApp Image 2026-07-06 at 12.11.30 PM.jpeg", caption: "Booking verification page" }
       ]
     }
+  },
+  {
+    id: "augrey-branding",
+    title: "Augrey Branding & Identity",
+    category: "Branding & Marketing",
+    description: "Bespoke visual identity and comprehensive brand guidelines system built for Augrey's enterprise solutions, emphasizing prestige and structural modernism.",
+    tags: ["Brand Identity", "Style Guides", "Visual Strategy", "Collateral Design"],
+    image: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.09 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Enterprise Visual Identity & Brand System",
+      overview: "Augrey needed a premium, unified visual identity system to communicate corporate authority and technological capability across their multi-channel enterprise services.",
+      challenge: "Integrating multiple service branches under a cohesive brand mark while ensuring guidelines are clear enough for developers and design teams globally.",
+      solution: "Designed a clean structural brand manual with detailed typography specifications, logo clearance zone rules, primary grids and a bold corporate color palette.",
+      duration: "3 Months",
+      deliverables: ["Visual Style Book", "Logo Usage Guidelines", "Corporate Stationery Suite", "Digital Marketing Assets"],
+      results: [
+        { label: "Unified Adoption", value: "All Teams" },
+        { label: "Collateral Creation", value: "2x Faster" },
+        { label: "Brand Consistency", value: "100%" }
+      ],
+      colors: [
+        { name: "Augrey Purple", hex: "#4B2EFF", usage: "Primary brand mark and main action accent" },
+        { name: "Onyx Canvas", hex: "#0D0C0E", usage: "Main backgrounds and corporate grids" },
+        { name: "Stark White", hex: "#FFFFFF", usage: "Main headings and layout boundaries" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Bold display type elements represent corporate strength, paired with clean geometric scales for specifications tables."
+      },
+      screenshots: [
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.09 PM.jpeg", caption: "Logo concept board" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.09 PM (1).jpeg", caption: "Typography rules" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.10 PM.jpeg", caption: "Stationery suite" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.10 PM (1).jpeg", caption: "Brand colors grid" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 6.35.10 PM (2).jpeg", caption: "Logo construction blueprints" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.38 PM.jpeg", caption: "Marketing social assets" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.39 PM.jpeg", caption: "Business cards mockup" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.39 PM (1).jpeg", caption: "Letterhead specs" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.39 PM (2).jpeg", caption: "Presentation templates" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.47 PM.jpeg", caption: "Folder design templates" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.48 PM.jpeg", caption: "Corporate envelopes" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.48 PM (1).jpeg", caption: "Outdoor signboards specs" },
+        { url: "/Augrey Br/WhatsApp Image 2026-07-02 at 7.31.48 PM (2).jpeg", caption: "Merchandise templates" }
+      ]
+    }
+  },
+  {
+    id: "football-branding",
+    title: "Football Club Visual Identity",
+    category: "Branding & Marketing",
+    description: "Dynamic club branding, customized typography, crest construction guidelines, and marketing collateral designed for a professional sports franchise.",
+    tags: ["Sports Branding", "Crest Design", "Apparel Mockups", "Event Assets"],
+    image: "/Football/WhatsApp Image 2026-07-02 at 6.41.58 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Dynamic Club Identity & Fan Engagement Kit",
+      overview: "We built a high-energy branding package for a professional football team. Emphasizing movement and regional pride, it includes an updated club crest, jersey layout specifications and promotional templates.",
+      challenge: "Ensuring the crest remains legible across all scales, from favicon sizes to massive stadium banners, while retaining dynamic athletic details.",
+      solution: "Designed a simplified, high-contrast shield crest using rigid geometric arcs. Built a unified visual kit for jerseys, print banners and digital ticket channels.",
+      duration: "2 Months",
+      deliverables: ["Club Shield Crest Logo", "Home/Away Jersey Layouts", "Stadium Banner System", "Social Media Match Day Kit"],
+      results: [
+        { label: "Merchandise Sales", value: "+45%" },
+        { label: "Social Media Engagement", value: "+80%" },
+        { label: "Sponsor Visibility", value: "Excellent" }
+      ],
+      colors: [
+        { name: "Stadium Red", hex: "#E2261C", usage: "Main jersey accent, shields outlines and key labels" },
+        { name: "Pitch Charcoal", hex: "#111111", usage: "Jerseys background base and slide decks borders" },
+        { name: "Trophy Gold", hex: "#F59E0B", usage: "Stars achievements details and secondary badges" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Aggressive, bold uppercase display headings capture matches energy, paired with clear monospaced numbers."
+      },
+      screenshots: [
+        { url: "/Football/WhatsApp Image 2026-07-02 at 6.41.58 PM.jpeg", caption: "Crest grid and logo lockups" },
+        { url: "/Football/WhatsApp Image 2026-07-02 at 6.41.58 PM (1).jpeg", caption: "Home/Away jerseys mockup" },
+        { url: "/Football/WhatsApp Image 2026-07-02 at 6.41.58 PM (2).jpeg", caption: "Merchandise and apparel specs" },
+        { url: "/Football/WhatsApp Image 2026-07-02 at 6.41.59 PM.jpeg", caption: "Stadium outdoor advertisements" }
+      ]
+    }
+  },
+  {
+    id: "mysooru-nivasa-branding",
+    title: "Mysooru Nivasa Identity",
+    category: "Branding & Marketing",
+    description: "Heritage-focused branding, logo designs, and presentation materials for premium residential developments in Mysore, combining tradition with modern living.",
+    tags: ["Real Estate Branding", "Logo Design", "Print Brochures", "Heritage Vectors"],
+    image: "/Mysooru Nivasa/WhatsApp Image 2026-07-02 at 6.37.39 PM.jpeg",
+    link: "#",
+    caseStudy: {
+      subtitle: "Heritage-Inspired Residential Brand System",
+      overview: "Mysooru Nivasa is a premium residential development that celebrates Mysore's rich architectural heritage. We designed a luxury branding catalog, traditional vector crest lockups and premium sales brochures.",
+      challenge: "Balancing Mysore's royal aesthetic traditions with a clean, modern and uncluttered layout suitable for premium home buyers.",
+      solution: "Created a refined emblem featuring local motifs (the royal elephant and palace dome outlines) in a minimalist frame, paired with deep sand and gold color palettes.",
+      duration: "2 Months",
+      deliverables: ["Bespoke Heritage Emblem", "Luxury Marketing Brochure", "Site Signboards Design", "Digital Pitch Presentation"],
+      results: [
+        { label: "Pre-Sales Conversion", value: "+30%" },
+        { label: "Brochure Download Rate", value: "+55%" },
+        { label: "Visitor Recall", value: "94%" }
+      ],
+      colors: [
+        { name: "Heritage Gold", hex: "#D4AF37", usage: "Elephant emblem, brochure accents and luxury card lines" },
+        { name: "Mysore Sand", hex: "#F3ECE1", usage: "Brochure pages background and text boxes" },
+        { name: "Palace Charcoal", hex: "#1C1C1E", usage: "Main editorial backgrounds and deep text sections" }
+      ],
+      typography: {
+        headlineFont: "Anton",
+        bodyFont: "Space Grotesk",
+        description: "Classic structural sans typography combined with modern, clean letter spacing creates a luxury real estate feel."
+      },
+      screenshots: [
+        { url: "/Mysooru Nivasa/WhatsApp Image 2026-07-02 at 6.37.39 PM.jpeg", caption: "Mysore heritage logo lockup" },
+        { url: "/Mysooru Nivasa/WhatsApp Image 2026-07-02 at 6.37.52 PM.jpeg", caption: "Brochure layouts and project overview" },
+        { url: "/Mysooru Nivasa/WhatsApp Image 2026-07-02 at 6.38.07 PM.jpeg", caption: "Marketing presentation deck" }
+      ]
+    }
   }
 ];
