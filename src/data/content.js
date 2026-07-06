@@ -23,8 +23,8 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "Over my career, I have built multi-disciplinary expertise across UI/UX design, branding, software development, enterprise applications, Generative AI, embedded systems, and SaaS platforms. I specialize in bridging the gap between design and high-performance development.",
-    "Comfortable owning product features from first client conversation to final delivery, I excel at translating ambiguous business requirements into clean, user-centric, and buildable systems. My journey reflects a deep commitment to continuous learning, technical excellence, and collaborative teamwork."
+    "Over my career, I have built multi-disciplinary expertise across UI/UX design, branding, software development, enterprise applications, Generative AI, embedded systems and SaaS platforms. I specialize in bridging the gap between design and high-performance development.",
+    "Comfortable owning product features from first client conversation to final delivery, I excel at translating ambiguous business requirements into clean, user-centric and buildable systems. My journey reflects a deep commitment to continuous learning, technical excellence and collaborative teamwork."
   ],
   stats: [
     { value: "3+", label: "Years of experience" },
@@ -57,12 +57,12 @@ export const education = [
   {
     degree: "Pre-University Course (PUC)",
     institution: "SEA College",
-    year: "Completed 2020"
+    year: "Completed 2018"
   },
   {
     degree: "Secondary School (SSLC)",
     institution: "Shree Krishna High School",
-    year: "Completed 2018"
+    year: "Completed 2016"
   }
 ];
 
@@ -77,7 +77,7 @@ export const awards = [
     title: "Super Team Award",
     org: "KPMG",
     year: "2024",
-    desc: "Awarded for outstanding teamwork, collaboration, and contribution to successful project delivery."
+    desc: "Awarded for outstanding teamwork, collaboration and contribution to successful project delivery."
   },
   {
     title: "Best Project Award (National Event)",
@@ -111,9 +111,9 @@ export const experience = [
     org: "KPMG",
     date: "Jul 2024 — Mar 2026",
     points: [
-      "Developed and designed enterprise software applications including Clara, Digital Gateway, Workbench, Risk Hub, Sofy, and Dash.",
+      "Developed and designed enterprise software applications including Clara, Digital Gateway, Workbench, Risk Hub, Sofy and Dash.",
       "Worked closely with cross-functional teams in an Agile environment to solve complex technical and business challenges.",
-      "Delivered high-quality, scalable, and maintainable software solutions, training and mentoring incoming interns.",
+      "Delivered high-quality, scalable and maintainable software solutions, training and mentoring incoming interns.",
       "Recognized with the Quality Champion Award (2026) and Super Team Award (2024) for project excellence and collaboration."
     ],
   },
@@ -131,7 +131,7 @@ export const experience = [
     org: "EMCOM Services Private Limited",
     date: "Nov 2023 — Jan 2024",
     points: [
-      "Assisted in designing and developing AI-powered features, smart home solutions, and UI/UX layouts.",
+      "Assisted in designing and developing AI-powered features, smart home solutions and UI/UX layouts.",
       "Worked on embedded system implementations, collaborating with senior developers on innovative product solutions."
     ],
   },
@@ -140,8 +140,8 @@ export const experience = [
     org: "DaVince Production",
     date: "Jun 2023 — Oct 2023",
     points: [
-      "Designed branding identity guides, marketing collateral, and creative assets for diverse client projects.",
-      "Collaborated with cross-functional teams to deliver visually engaging solutions, artist management, and event execution."
+      "Designed branding identity guides, marketing collateral and creative assets for diverse client projects.",
+      "Collaborated with cross-functional teams to deliver visually engaging solutions, artist management and event execution."
     ],
   }
 ];
